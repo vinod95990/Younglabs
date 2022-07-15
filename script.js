@@ -1,7 +1,23 @@
+// VinodM
+
+// store data from api
 let infoArray;
 const deck=document.querySelector('.deck');
 const mainCard=document.querySelector('.main_card');
+
+/*
+cardT is used add or remove css from a card when clicked , cardT here is used as a variable which will
+hold the previous clicked card element and by deafault it's -1 that is initially when no card is clicked
+Used this variable in order to add/remove classes in O(1) complexity
+*/
 let cardT=-1;
+
+// When the deck i.e the collection of card is clicked , this event is triggered
+/*
+This event will change the card's css which is clicked and also changes the main component i.e the main big
+screen card
+*/
+
 deck.addEventListener('click',function(e){
     if(e.target.classList.contains('deck'))
     {
@@ -55,6 +71,7 @@ deck.addEventListener('click',function(e){
     }
 })
 
+// Fetching from API
 const x=fetch('https://randomuser.me/api/?inc=gender,name,nat,location,picture,email&results=%2020').then((x)=>{
     return x.json();
 }).then((x)=>{
@@ -67,7 +84,9 @@ const x=fetch('https://randomuser.me/api/?inc=gender,name,nat,location,picture,e
 
 
 
-
+/*
+It returns the html template that is then pushed into the deck of cards
+ */
 
 function cardMaking(obj,i)
 {
@@ -86,7 +105,9 @@ function cardMaking(obj,i)
 `
 }
 
-
+/*
+This function returns the html template of the main component card
+*/
 function bigCardMaker(index)
 {
     console.log(index);
