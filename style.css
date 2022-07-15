@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+body{
+position: relative;
+}
+
+nav :first-child{
+    
+position: absolute;
+width: 158px;
+height: 35px;
+left: 120px;
+top: 40px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 145%;
+/* identical to box height, or 35px */
+
+
+color: #000000;
+
+}
+
+
+#product{
+    
+width: 60px;
+height: 26px;
+
+font-family: 'Roboto';
+font-style: normal;
+
+font-weight: 400;
+font-size: 17px;
+line-height: 150%;
+/* identical to box height, or 26px */
+position: absolute;
+right: 236px;
+top: 40px;
+color: #000000;
+
+}
+
+#download{
+
+width: 60px;
+height: 26px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 150%;
+/* identical to box height, or 26px */
+position: absolute;
+right: 164px;
+top: 40px;
+color: #000000;
+
+}
+
+#pricing{
+
+    width: 60px;
+    height: 26px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    /* identical to box height, or 26px */
+    position: absolute;
+    right: 74px;
+    top: 40px;
+    color: #000000;
+    
+    }
+
+
+.main_card{
+position: absolute;
+display: flex;
+padding: 100px;
+gap:30px;
+width: 996px;
+height: 291px;
+left: 222px;
+top: 147px;
+align-content: center;
+align-items: center;
+justify-content: center;
+background: #FFFFFF;
+box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+border-radius: 16px;
+
+}
+
+.main_mg{
+    width: 128px;
+    height: 128px;
+    left: 286px;
+    top: 228px;
+    align-self: center;
+    justify-self: center;
+}
+
+.main_mg img{
+    border-radius: 120px;
+
+}
+
+.main_about{
+    align-self: center;
+    justify-self: center;
+}
+
+.main_about h1{
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+margin:     10px;
+line-height: 100%;
+/* identical to box height, or 64px */
+
+ letter-spacing: -1.85px;
+text-decoration-line: underline;
+
+color: #E16259;
+}
+
+.main_about p{
+
+    margin:     10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 145%;
+/* or 29px */
+
+
+color: #A259FF;
+} 
+
+.main_about .gender{
+    margin:     10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    color:aqua;
+}
+
+
+.deck{
+    position: absolute;
+    top:520px;
+    left:113px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+}
+
+.card{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 12px 16px;
+gap: 8px;
+
+width: 282px;
+height: 110px;
+background: #FFFFFF;
+/* Medium Shadow */
+
+box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.cardHead{
+    width: 86px;
+    height: 21px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    
+    color: rgba(0, 0, 0, 0.6);
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cardBody{
+    width: 250px;
+    height: 30px;
+    /* margin: 5px; */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135%;
+    /* identical to box height, or 30px */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+.cardFoot{
+   
+width: 217px;
+height: 23px;
+/* margin: 5px; */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 150%;
+/* identical to box height, or 22px */
+
+
+color: #E16259;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+
+footer{
+    position: absolute;
+    border: 1px solid red;
+    top:1200px;
+}
