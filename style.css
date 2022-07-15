@@ -156,10 +156,18 @@ font-weight: 700;
 font-size: 20px;
 line-height: 145%;
 /* or 29px */
+font-weight: 500;
+color: #000000;
 
-
-color: #A259FF;
 } 
+
+.streetNo{
+color: #A259FF;
+}
+
+.country{
+    font-weight: bolder;
+}
 
 .main_about .gender{
     margin:     10px;
@@ -278,4 +286,20 @@ footer{
     position: absolute;
     border: 1px solid red;
     top:1200px;
+}
+
+
+
+.clickC{
+    color:white !important; 
+    background-color: #A259FF !important;
+}
+
+.clickC p{
+    color:white !important; 
+
+}
+.clickC h2{
+    color:white !important; 
+
 }
